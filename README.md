@@ -22,3 +22,8 @@
 [intersection-observer](https://github.com/HenrikDK2/preact-intersection-observer)
 
 [Lottie Animation Astro integration](https://github.com/giuseppelt/astro-lottie#readme.md)
+
+
+## To remember
+
+To learn [JavaScript Intersection](https://blog.webdevsimplified.com/2022-01/intersection-observer/)

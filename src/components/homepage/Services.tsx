@@ -46,12 +46,19 @@ export const Services = () => {
               <div class="order-2 flex flex-col rounded-2xl bg-gray-900 bg-opacity-50 p-8 text-left shadow-xl-flat">
                 <h2 class="font-header mt-auto text-3xl">Web Design</h2>
                 <p class="mt-2 text-gray-600 dark:text-gray-400">
-                  From small to medium size personal or corporate websites. User
-                  interfaces. Revamp of old design to make everything look good
-                  on the internet.
+                  I specialize in creating visually appealing and user-friendly
+                  websites for personal and corporate clients, ranging from{" "}
+                  <span className="text-orange">small to medium-sized</span>. It
+                  is include designing user interfaces and modernizing outdated
+                  designs to ensure a polished and professional online presence.
                 </p>
                 <p class="mt-2 mb-auto text-gray-600 dark:text-gray-400">
-                  Next.js, Astro, Node.js, Gatsby, Wordpress or simply HTML.
+                  I know{" "}
+                  <span className="text-orange">
+                    Next.js, Astro, React, Node.js, WordPress
+                  </span>{" "}
+                  and many more frameworks to create simple static or heavily
+                  interactive websites.
                 </p>
               </div>
               <div class="order-3 flex flex-col rounded-2xl bg-gray-900 bg-opacity-50 p-8 text-left  shadow-xl-flat">
@@ -59,8 +66,13 @@ export const Services = () => {
                   Digital Media Design
                 </h2>
                 <p class="mt-2 mb-auto text-gray-600 dark:text-gray-400">
-                  Photos, banners (including simple animations) and everything
-                  else that are served through the internet.
+                  My digital media design services include creating professional
+                  and engaging visual content such as{" "}
+                  <span className="text-orange">images, banners</span>, and{" "}
+                  <span className="text-orange">simple animations</span> for use
+                  on the internet. I am equipped to handle all your digital
+                  media needs and ensure that your online presence is visually
+                  stunning and effective.
                 </p>
               </div>
             </div>
@@ -91,16 +103,24 @@ export const Services = () => {
               <div class="order-2 flex flex-col rounded-2xl bg-gray-900 bg-opacity-50 p-8 text-left shadow-xl-flat md:order-1">
                 <h2 class="font-header mt-auto text-3xl">Print Media</h2>
                 <p class="mt-2 mb-auto text-gray-600 dark:text-gray-400">
-                  Design projects of print media like flyers, brochures and
-                  everything else that need visual esthetic in the digital or
-                  physical world.
+                  I specialize in designing visually striking print media such
+                  as <span className="text-orange">flyers, brochures</span>, and{" "}
+                  <span className="text-orange">other materials</span> that
+                  require a polished aesthetic in both digital and physical
+                  formats. My goal is to create visually impactful designs that
+                  effectively communicate your message and enhance your brand's
+                  image.
                 </p>
               </div>
               <div class="order-3 flex flex-col rounded-2xl bg-gray-900 bg-opacity-50 p-8 text-left shadow-xl-flat">
                 <h2 class="font-header mt-auto text-3xl">Coorporate design</h2>
                 <p class="mt-2 mb-auto text-gray-600 dark:text-gray-400">
-                  Corporate or product design. When it is important to make
-                  great first impression about your brand.
+                  As a corporate and product designer, my focus is on creating
+                  designs that make a strong and lasting impression of your
+                  brand. I understand the importance of representing your
+                  company or product in the best possible light and work
+                  diligently to craft designs that effectively communicate your
+                  message and enhance your brand's image.
                 </p>
               </div>
             </div>

@@ -4,7 +4,7 @@ export const Portfolio = () => {
   return (
     <div id="works">
       {/* @ts-ignore */}
-      <InView threshold={0.4} triggerOnce={true}>
+      <InView threshold={0.1} triggerOnce={true}>
         {/* @ts-ignore */}
         {({ inView, ref, entry }) => (
           <div
