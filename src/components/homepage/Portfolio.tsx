@@ -22,10 +22,11 @@ export const Portfolio = () => {
               </h2>
               <div>
                 <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                  {/* moviesNight */}
                   <div className="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange">
                     <a href="/portfolio/moviesnight/">
                       <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100">
-                        <p className="flex items-center rounded-2xl bg-orange py-2 px-3 text-xl">
+                        <p className="flex items-center rounded-2xl bg-orange px-3 py-2 text-xl">
                           Check it out
                         </p>
                       </div>
@@ -39,10 +40,11 @@ export const Portfolio = () => {
                       className="h-full object-cover object-left"
                     />
                   </div>
+                  {/* connect724 */}
                   <div className="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange">
                     <a href="/portfolio/connect724/">
                       <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100">
-                        <p className="flex items-center rounded-2xl bg-orange py-2 px-3 text-xl">
+                        <p className="flex items-center rounded-2xl bg-orange px-3 py-2 text-xl">
                           Check it out
                         </p>
                       </div>
@@ -53,24 +55,11 @@ export const Portfolio = () => {
                       className="h-full object-cover object-left"
                     />
                   </div>
-                  <div className="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange">
-                    <a href="/portfolio/zustellpartner/">
-                      <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100">
-                        <p className="flex items-center rounded-2xl bg-orange py-2 px-3 text-xl">
-                          Check it out
-                        </p>
-                      </div>
-                    </a>
-                    <img
-                      src="/assets/images/thumbnails/zp_thumbnail.jpg"
-                      alt="zustellpartner.at thumbnail"
-                      className="h-full object-cover object-left"
-                    />
-                  </div>
+                  {/* hausbrot */}
                   <div className="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange">
                     <a href="/portfolio/hausbrot/">
                       <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100">
-                        <p className="flex items-center rounded-2xl bg-orange py-2 px-3 text-xl">
+                        <p className="flex items-center rounded-2xl bg-orange px-3 py-2 text-xl">
                           Check it out
                         </p>
                       </div>
@@ -81,10 +70,43 @@ export const Portfolio = () => {
                       className="h-full object-cover object-left"
                     />
                   </div>
+
+                  {/* lietuviia.at */}
+                  <div className="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange">
+                    <a href="/portfolio/lietuviai-at/">
+                      <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100">
+                        <p className="flex items-center rounded-2xl bg-orange px-3 py-2 text-xl">
+                          Check it out
+                        </p>
+                      </div>
+                    </a>
+                    <img
+                      src="/assets/images/thumbnails/lietuviai-at_thumbnail.jpg"
+                      alt="lietuviai.at thumbnail"
+                      className="h-full object-cover object-left"
+                    />
+                  </div>
+                  {/* zustellpartner */}
+                  <div className="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange">
+                    <a href="/portfolio/zustellpartner/">
+                      <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100">
+                        <p className="flex items-center rounded-2xl bg-orange px-3 py-2 text-xl">
+                          Check it out
+                        </p>
+                      </div>
+                    </a>
+                    <img
+                      src="/assets/images/thumbnails/zp_thumbnail.jpg"
+                      alt="zustellpartner.at thumbnail"
+                      className="h-full object-cover object-left"
+                    />
+                  </div>
+
+                  {/* dariuszaida */}
                   <div className="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange">
                     <a href="/portfolio/dariuszaida">
                       <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100">
-                        <p className="flex items-center rounded-2xl bg-orange py-2 px-3 text-xl">
+                        <p className="flex items-center rounded-2xl bg-orange px-3 py-2 text-xl">
                           Check it out
                         </p>
                       </div>
