@@ -33,17 +33,16 @@ export default function ContactForm() {
 
     setSendError(false);
 
+    console.log(submitData);
+
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      //const response = await fetch("http://localhost:4000/api/send", {
+      const response = await fetch("https://send.juliuszlioba.com/api/send", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
         body: JSON.stringify(submitData, null, 2),
       });
       const responseData = await response.json();
-      if (!responseData.success) return setSendError(true);
+      if (!responseData) return setSendError(true);
       setLoading(false);
       return setSent(true);
     } catch {
@@ -85,12 +84,12 @@ export default function ContactForm() {
                   className="mt-4 grid grid-cols-1 gap-4 pb-4"
                   onSubmit={handleSubmit(onSubmit)}
                 >
-                  <input
+                  {/* <input
                     type="hidden"
                     {...register("access_key", {
                       value: "ca01780a-732f-4c75-82f5-995cba5e1a1b",
                     })}
-                  />
+                  /> */}
                   <input
                     type="checkbox"
                     id=""
