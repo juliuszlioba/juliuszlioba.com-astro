@@ -31,7 +31,6 @@ export const Portfolio = () => {
                         </p>
                       </div>
                     </a>
-
                     <img
                       src="/assets/images/thumbnails/moviesNight_thumbnail.jpg"
                       alt="moviesNight thumbnail"

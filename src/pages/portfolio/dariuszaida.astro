@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
 import thumbnail from "../../../assets/images/portfolio/dariuszaida/portfolio_dariuszaida_thumbnail.jpg";
@@ -23,7 +23,7 @@ import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariusz
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg>
-            Go back
+             Go back
           </a>
           <p class="uppercase tracking-widest text-gray-300">Project</p>
           <h2 class="font-header mt-2 text-6xl">dariuszaida.lt</h2>
@@ -32,10 +32,8 @@ import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariusz
           </p>
         </div>
         <div class="md:w-1/2">
-          <Picture
+          <Image
             src={thumbnail}
-            sizes="(max-width: 800px) 100vw, 800px"
-            widths={[528, 800]}
             alt="dariuszaida.lt Project Thumbnail"
             class="rounded-2xl"
           />
@@ -68,10 +66,8 @@ import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariusz
               preparation in the concept stage because it needed to look light
               and neatly arranged.
             </p>
-            <Picture
+            <Image
               src={dariuszaida_content_img_01}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="sketches"
               class="rounded-2xl"
             />
@@ -80,17 +76,13 @@ import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariusz
               represent his esthetics. Afterwards, I coded a custom WordPress
               theme from scratch and put everything togheter.
             </p>
-            <Picture
+            <Image
               src={dariuszaida_content_img_02}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="website"
               class="rounded-2xl"
             />
-            <Picture
+            <Image
               src={dariuszaida_content_img_03}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="website on difrent screens"
               class="rounded-2xl"
             />

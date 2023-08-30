@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
 import thumbnail from "../../../assets/images/portfolio/zustellpartner/zp_thumbnail.jpg";
@@ -23,7 +23,7 @@ import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/z
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg>
-            Go back
+             Go back
           </a>
           <p class="uppercase tracking-widest text-gray-300">Project</p>
           <h2 class="font-header mt-2 text-6xl">zustellpartner.at</h2>
@@ -32,10 +32,8 @@ import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/z
           </p>
         </div>
         <div class="md:w-1/2">
-          <Picture
+          <Image
             src={thumbnail}
-            sizes="(max-width: 800px) 100vw, 800px"
-            widths={[528, 800]}
             alt="zustellpartner.at Project Thumbnail"
             class="rounded-2xl"
           />
@@ -69,13 +67,7 @@ import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/z
               everyone looking for flexible secondary employment outside of
               normal working hours.
             </p>
-            <Picture
-              src={zp_content_img_01}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
-              alt="sketches"
-              class="rounded-2xl"
-            />
+            <Image src={zp_content_img_01} alt="sketches" class="rounded-2xl" />
             <p class="text-lg tracking-wide text-gray-400">
               I chose the Gatsyjs framework to build the front-end of the
               website, while everything except for one page is static content.
@@ -83,18 +75,10 @@ import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/z
               all backend functions like Enquiry Form processing and API for
               current job available.
             </p>
-            <Picture
-              src={zp_content_img_02}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
-              alt="website"
-              class="rounded-2xl"
-            />
+            <Image src={zp_content_img_02} alt="website" class="rounded-2xl" />
 
-            <Picture
+            <Image
               src={zp_content_img_03}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="website on difrent screens"
               class="rounded-2xl"
             />

@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
 import thumbnail from "../../../assets/images/portfolio/c724/c724_thumbnail.jpg";
@@ -26,7 +26,7 @@ import c724_content_img_06 from "../../../assets/images/portfolio/c724/c724_main
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg>
-            Go back
+             Go back
           </a>
           <p class="uppercase tracking-widest text-gray-300">Project</p>
           <h2 class="font-header mt-2 text-6xl">connect724 GmbH</h2>
@@ -35,10 +35,8 @@ import c724_content_img_06 from "../../../assets/images/portfolio/c724/c724_main
           </p>
         </div>
         <div class="md:w-1/2">
-          <Picture
+          <Image
             src={thumbnail}
-            sizes="(max-width: 800px) 100vw, 800px"
-            widths={[528, 800]}
             alt="connect724 Project Thumbnail"
             class="rounded-2xl"
           />
@@ -74,10 +72,8 @@ import c724_content_img_06 from "../../../assets/images/portfolio/c724/c724_main
               My task was to create the whole Corporate Design language for
               connect724 GmbH. And later do all designs for any media needed.
             </p>
-            <Picture
+            <Image
               src={c724_content_img_01}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="sketches"
               class="rounded-2xl"
             />
@@ -87,10 +83,8 @@ import c724_content_img_06 from "../../../assets/images/portfolio/c724/c724_main
               variations, a design with three dots connecting to the letter "C"
               was chosen.
             </p>
-            <Picture
+            <Image
               src={c724_content_img_02}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="c724 Logo development"
               class="rounded-2xl"
             />
@@ -98,10 +92,8 @@ import c724_content_img_06 from "../../../assets/images/portfolio/c724/c724_main
               Having a logo and after choosing a primary colour, followed the
               office supplies.
             </p>
-            <Picture
+            <Image
               src={c724_content_img_03}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="corporate design"
               class="rounded-2xl"
             />
@@ -110,10 +102,8 @@ import c724_content_img_06 from "../../../assets/images/portfolio/c724/c724_main
               maintained the same colour scheme. Later it was also decided on
               secondary colour to make more contrast looking appeal.
             </p>
-            <Picture
+            <Image
               src={c724_content_img_05}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="print materials"
               class="rounded-2xl"
             />
@@ -128,18 +118,14 @@ import c724_content_img_06 from "../../../assets/images/portfolio/c724/c724_main
               performance and easy maintenance.
             </p>
 
-            <Picture
+            <Image
               src={c724_content_img_04}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="website"
               class="rounded-2xl"
             />
 
-            <Picture
+            <Image
               src={c724_content_img_06}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="website on difrent screens"
               class="rounded-2xl"
             />

@@ -1,5 +1,6 @@
 ---
-import { Picture } from "@astrojs/image/components";
+// import { Image } from "astro:assets";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
 import thumbnail from "../../../assets/images/portfolio/moviesNight/moviesNight_thumbnail.jpg";
@@ -25,7 +26,7 @@ import moviesNight_screens from "../../../assets/images/portfolio/moviesNight/mo
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg>
-            Go back
+             Go back
           </a>
           <p class="uppercase tracking-widest text-gray-300">Project</p>
           <h2 class="font-header mt-2 text-6xl">moviesNight</h2>
@@ -35,10 +36,8 @@ import moviesNight_screens from "../../../assets/images/portfolio/moviesNight/mo
           </p>
         </div>
         <div class="md:w-1/2">
-          <Picture
+          <Image
             src={thumbnail}
-            sizes="(max-width: 800px) 100vw, 800px"
-            widths={[528, 800]}
             alt="MoviesNight's Project Thumbnail"
             class="rounded-2xl"
           />
@@ -79,10 +78,8 @@ import moviesNight_screens from "../../../assets/images/portfolio/moviesNight/mo
               sketches of what I would like to have and started the development
               of the website.
             </p>
-            <Picture
+            <Image
               src={moviesNight_intro}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="moviesNight preparations"
               class="rounded-2xl"
             />
@@ -98,22 +95,16 @@ import moviesNight_screens from "../../../assets/images/portfolio/moviesNight/mo
               learning purposes.
             </p>
             <div class="overflow-hidden rounded-2xl bg-gray-900">
-              <Picture
+              <Image
                 src={moviesNight_main_part01}
-                sizes="(max-width: 800px) 100vw, 800px"
-                widths={[528, 800]}
                 alt="moviesNight project part-1"
               />
-              <Picture
+              <Image
                 src={moviesNight_main_part02}
-                sizes="(max-width: 800px) 100vw, 800px"
-                widths={[528, 800]}
                 alt="moviesNight project part-1"
               />
-              <Picture
+              <Image
                 src={moviesNight_main_part03}
-                sizes="(max-width: 800px) 100vw, 800px"
-                widths={[528, 800]}
                 alt="moviesNight project part-1"
               />
             </div>
@@ -122,10 +113,8 @@ import moviesNight_screens from "../../../assets/images/portfolio/moviesNight/mo
               the list since 2016, when I started tracking what I watch.
             </p>
 
-            <Picture
+            <Image
               src={moviesNight_screens}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="moviesNight screens"
               class="rounded-2xl"
             />

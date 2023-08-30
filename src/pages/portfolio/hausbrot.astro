@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
 import thumbnail from "../../../assets/images/portfolio/hbr/hbr_thumbnail.jpg";
@@ -23,7 +23,7 @@ import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg>
-            Go back
+             Go back
           </a>
           <p class="uppercase tracking-widest text-gray-300">Project</p>
           <h2 class="font-header mt-2 text-6xl">hausbrot.at Webshop</h2>
@@ -32,10 +32,8 @@ import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens
           </p>
         </div>
         <div class="md:w-1/2">
-          <Picture
+          <Image
             src={thumbnail}
-            sizes="(max-width: 800px) 100vw, 800px"
-            widths={[528, 800]}
             alt="hausbrot.at Project Thumbnail"
             class="rounded-2xl"
           />
@@ -62,10 +60,8 @@ import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens
               The job was to completely revamp the old website's design to new
               corporate design guidelines.
             </p>
-            <Picture
+            <Image
               src={hbr_content_img_01}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="sketches"
               class="rounded-2xl"
             />
@@ -76,18 +72,10 @@ import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens
               writing all website javescripts scripts for interactive
               components.
             </p>
-            <Picture
-              src={hbr_content_img_02}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
-              alt="website"
-              class="rounded-2xl"
-            />
+            <Image src={hbr_content_img_02} alt="website" class="rounded-2xl" />
 
-            <Picture
+            <Image
               src={hbr_content_img_03}
-              sizes="(max-width: 800px) 100vw, 800px"
-              widths={[528, 800]}
               alt="website on difrent screens"
               class="rounded-2xl"
             />
