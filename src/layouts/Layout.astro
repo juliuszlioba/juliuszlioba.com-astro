@@ -23,6 +23,24 @@ const gtag_id = import.meta.env.PUBLIC_GTAG_ID;
     <title>{title}</title>
     <ViewTransitions />
 
+    <style is:global>
+      html {
+        font-family: "DM Sans", system-ui, sans-serif;
+        @apply bg-gray-800 text-white;
+      }
+      body {
+        font-family: "DM Sans", system-ui, sans-serif;
+        @apply bg-gray-800 text-white;
+      }
+      .font-pt-sans {
+        font-family: "PT Sans", sans-serif;
+      }
+      .font-pt-sans-bold,
+      .font-header {
+        font-family: "PT Sans", sans-serif;
+      }
+    </style>
+
     <script is:inline>
       // Define dataLayer and the gtag function.
       window.dataLayer = window.dataLayer || [];
@@ -53,21 +71,5 @@ const gtag_id = import.meta.env.PUBLIC_GTAG_ID;
     <MainNav client:load />
     <slot />
     <Footer />
-  </body><style is:global>
-    html {
-      font-family: "DM Sans", system-ui, sans-serif;
-      @apply bg-gray-800 text-white;
-    }
-    body {
-      font-family: "DM Sans", system-ui, sans-serif;
-      @apply bg-gray-800 text-white;
-    }
-    .font-pt-sans {
-      font-family: "PT Sans", sans-serif;
-    }
-    .font-pt-sans-bold,
-    .font-header {
-      font-family: "PT Sans", sans-serif;
-    }
-  </style>
+  </body>
 </html>

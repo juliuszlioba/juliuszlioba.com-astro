@@ -1,5 +1,6 @@
 import { useState } from "preact/compat";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
+import type { SubmitHandler } from "react-hook-form";
 
 type Inputs = {
   access_key: string;
@@ -84,12 +85,6 @@ export default function ContactForm() {
                   className="mt-4 grid grid-cols-1 gap-4 pb-4"
                   onSubmit={handleSubmit(onSubmit)}
                 >
-                  {/* <input
-                    type="hidden"
-                    {...register("access_key", {
-                      value: "ca01780a-732f-4c75-82f5-995cba5e1a1b",
-                    })}
-                  /> */}
                   <input
                     type="checkbox"
                     id=""
@@ -199,7 +194,7 @@ export default function ContactForm() {
                     <input
                       className="
                        cursor-pointer
-                       rounded-lg
+                       rounded-full
                        bg-orange px-3 py-3 text-lg
                        hover:bg-orange-light focus:ring-4
                        focus:ring-orange

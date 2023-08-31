@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -16,6 +17,9 @@ module.exports = {
     },
 
     extend: {
+      fontFamily: {
+        sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
+      },
       boxShadow: {
         "xl-flat": "19px 19px 38px #202020, -19px -19px 38px #2c2c2c;",
         //"2.6px 4.9px 7.5px -44px rgba(251, 114, 58, 0.053),  21px 39px 60px -44px rgba(251, 114, 58, 0.17)",
