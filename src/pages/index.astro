@@ -2,7 +2,7 @@
 import Hero from "../components/homepage/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import { AboutMe } from "../components/homepage/About";
-import { Portfolio } from "../components/homepage/Portfolio";
+import PortfolioWeb from "../components/homepage/Portfolio-web.astro";
 import { Services } from "../components/homepage/Services";
 ---
 
@@ -10,7 +10,7 @@ import { Services } from "../components/homepage/Services";
   <main>
     <Hero />
     <Services client:visible />
-    <Portfolio client:visible />
+    <PortfolioWeb />
     <AboutMe client:visible />
   </main>
 </Layout>

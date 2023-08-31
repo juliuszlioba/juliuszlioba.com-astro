@@ -31,7 +31,7 @@ export const AboutMe = () => {
               <p className="mt-2 max-w-prose text-lg tracking-wide text-gray-600 dark:text-gray-400">
                 Time off work is likewise important, so when I can, I like to
                 take hiking or biking in nature to keep my mind fresh. And my
-                second passion besides design is taking rides on a motorcycle.
+                second passion besides design is taking rides with a motorcycle.
               </p>
               <p className="mt-2 max-w-prose text-lg tracking-wide text-gray-600 dark:text-gray-400">
                 Then the day's work is done and the sun is setting down I love

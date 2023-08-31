@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
-import thumbnail from "../../../assets/images/portfolio/zustellpartner/zp_thumbnail.jpg";
+import zp_thumbnailImage from "../../../assets/images/portfolio/zustellpartner/zp_thumbnail.jpg";
 import zp_content_img_01 from "../../../assets/images/portfolio/zustellpartner/zp_main_part01.jpg";
 import zp_content_img_02 from "../../../assets/images/portfolio/zustellpartner/zp_main_part02.jpg";
 import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/zp_screens.jpg";
@@ -33,9 +33,10 @@ import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/z
         </div>
         <div class="md:w-1/2">
           <Image
-            src={thumbnail}
+            src={zp_thumbnailImage}
             alt="zustellpartner.at Project Thumbnail"
             class="rounded-2xl"
+            transition:name="works.zustellpartner"
           />
         </div>
       </div>
@@ -82,6 +83,21 @@ import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/z
               alt="website on difrent screens"
               class="rounded-2xl"
             />
+
+            <div class="inline-flex">
+              <a
+                href="https://zustellpartner.at/"
+                target="_blank"
+                rel="nofollow noreferrer"
+                class="focus:ring-site-primary flex items-center rounded-full bg-orange px-6 py-2 text-lg hover:bg-orange-light focus:ring-4 gap-2"
+              >
+                Visit website
+                <!-- prettier-ignore -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+              </a>
+            </div>
 
             <p
               class="mt-8 border-t-2 border-dashed border-gray-700 pt-12 uppercase tracking-widest text-gray-400"

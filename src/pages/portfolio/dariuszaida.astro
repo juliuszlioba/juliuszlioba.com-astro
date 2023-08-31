@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
-import thumbnail from "../../../assets/images/portfolio/dariuszaida/portfolio_dariuszaida_thumbnail.jpg";
+import dariuszaida_thumbnailImage from "../../../assets/images/portfolio/dariuszaida/portfolio_dariuszaida_thumbnail.jpg";
 import dariuszaida_content_img_01 from "../../../assets/images/portfolio/dariuszaida/portfolio_dariuszaida_sketches.jpg";
 import dariuszaida_content_img_02 from "../../../assets/images/portfolio/dariuszaida/portfolio_dariuszaida_website.jpg";
 import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariuszaida/portfolio_dariuszaida_website_finished.jpg";
@@ -33,9 +33,10 @@ import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariusz
         </div>
         <div class="md:w-1/2">
           <Image
-            src={thumbnail}
+            src={dariuszaida_thumbnailImage}
             alt="dariuszaida.lt Project Thumbnail"
             class="rounded-2xl"
+            transition:name="works.dariuszaida"
           />
         </div>
       </div>
@@ -87,10 +88,10 @@ import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariusz
               class="rounded-2xl"
             />
 
-            <p class="text-lg tracking-wide text-gray-400">
+            <!-- <p class="text-lg tracking-wide text-gray-400">
               You can visit website online to see the full experience.
-            </p>
-            <div class="inline-flex">
+            </p> -->
+            <!-- <div class="inline-flex">
               <a
                 href="http://dariuszaida.lt"
                 target="_blank"
@@ -98,10 +99,9 @@ import dariuszaida_content_img_03 from "../../../assets/images/portfolio/dariusz
                 class="focus:ring-site-primary flex items-center rounded-lg bg-orange py-3 px-4 text-lg hover:bg-orange-light focus:ring-4"
               >
                 Visit website
-                <!-- prettier-ignore -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-2 h-4 w-4" viewBox="0 0 16 16" > <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" ></path> <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" ></path> </svg>
               </a>
-            </div>
+            </div> -->
 
             <p
               class="mt-8 border-t-2 border-dashed border-gray-700 pt-12 uppercase tracking-widest text-gray-400"

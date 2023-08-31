@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
-import thumbnail from "../../../assets/images/portfolio/hbr/hbr_thumbnail.jpg";
+import hbr_thumbnailImage from "../../../assets/images/portfolio/hbr/hbr_thumbnail.jpg";
 import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_main_part01.jpg";
 import hbr_content_img_02 from "../../../assets/images/portfolio/hbr/hbr_main_part02.jpg";
 import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens.jpg";
@@ -30,12 +30,27 @@ import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens
           <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
             Website project for hausbrot.at
           </p>
+          <div class="inline-flex pt-6 pb-4 gap-4 items-center">
+            <a
+              href="https://hausbrot.at/"
+              target="_blank"
+              rel="nofollow noreferrer"
+              class="focus:ring-site-primary flex items-center rounded-full bg-orange px-6 py-2 text-lg hover:bg-orange-light focus:ring-4 gap-2"
+            >
+              Visit website
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="md:w-1/2">
           <Image
-            src={thumbnail}
+            src={hbr_thumbnailImage}
             alt="hausbrot.at Project Thumbnail"
             class="rounded-2xl"
+            transition:name="works.hbr"
           />
         </div>
       </div>
@@ -85,14 +100,16 @@ import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens
             </p>
             <div class="inline-flex">
               <a
-                href="https://www.hausbrot.at/"
+                href="https://hausbrot.at/"
                 target="_blank"
                 rel="nofollow noreferrer"
-                class="focus:ring-site-primary flex items-center rounded-lg bg-orange px-4 py-3 text-lg hover:bg-orange-light focus:ring-4"
+                class="focus:ring-site-primary flex items-center rounded-full bg-orange px-6 py-2 text-lg hover:bg-orange-light focus:ring-4 gap-2"
               >
                 Visit website
                 <!-- prettier-ignore -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-2 h-4 w-4" viewBox="0 0 16 16" > <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" ></path> <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" ></path> </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
               </a>
             </div>
 
@@ -102,8 +119,7 @@ import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_screens
               Acknowledgement
             </p>
             <p class="max-w-prose text-sm tracking-wide text-gray-400">
-              &copy; Some used images belongs to Cimedia Printmedienvertriebs
-              GmbH and WNB Zustell GmbH.
+              &copy; Some used images belongs to connect724 GmbH.
             </p>
           </div>
         </div>
