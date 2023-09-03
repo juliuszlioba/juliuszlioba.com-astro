@@ -9,7 +9,7 @@ import dariuszaida_thumbnailImage from "../../../assets/images/portfolio/dariusz
 ---
 
 <div id="works">
-  <div class={`relative z-0 mt-20 overflow-visible py-20 duration-300`}>
+  <div class="relative z-0 mt-20 overflow-visible py-20">
     <div
       id="works.container"
       class="relative z-10 m-auto max-w-6xl px-4 md:px-8"
@@ -170,23 +170,3 @@ import dariuszaida_thumbnailImage from "../../../assets/images/portfolio/dariusz
     </div>
   </div>
 </div>
-
-<!-- <script>
-  const target = document.getElementById("works.container");
-
-  const callback = (entries: any) => {
-    entries.map((i: any) => {
-      if (i.isIntersecting) {
-        target!.classList.remove("opacity-0");
-        target!.classList.add("opacity-100");
-        return observer.unobserve(target!);
-      }
-    });
-  };
-
-  const observer = new IntersectionObserver(callback, {
-    rootMargin: "-25% 0% -50% 0%",
-  });
-
-  observer.observe(target!);
-</script> -->
