@@ -13,12 +13,15 @@ const translatePath = useTranslatedPath(lang);
 
 <div class="absolute top-0 left-0 z-10 w-full py-10" x-data="{ open: false }">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-4 md:px-8">
-    <a href="/" class="font-pt-sans-bold z-50 order-1 text-2xl">
+    <a
+      href={translatePath("/")}
+      class="font-pt-sans-bold z-50 order-1 text-2xl"
+    >
       juliuszlioba<span class="text-gray-400">.com</span>
     </a>
 
     <button
-      class="z-50 order-4 ml-3 self-stretch rounded-full bg-gray-700 p-2 lg:hidden"
+      class="z-50 order-4 ml-3 self-stretch rounded-full bg-gray-700 p-2 lg:hidden hover:bg-orange"
       x-on:click="open = ! open"
     >
       <div x-show="open">
@@ -84,7 +87,7 @@ const translatePath = useTranslatedPath(lang);
         >
           {t("nav.contacts")}
         </a>
-        <div class="flex flex-row gap-4 lg:gap-5">
+        <div class="flex flex-row gap-4 lg:gap-5 justify-center">
           <div class="flex justify-center">
             <a
               href="https://github.com/juliuszlioba"
