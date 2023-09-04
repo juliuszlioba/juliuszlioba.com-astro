@@ -60,10 +60,12 @@ export default function ContactForm() {
       <div class="relative z-10 m-auto max-w-6xl px-4 md:px-8">
         <div class="flex flex-col gap-8 text-center md:flex-row md:text-left">
           <div class="md:w-2/5">
-            <p class="uppercase tracking-widest text-gray-400">Contact me.</p>
+            <p class="uppercase tracking-widest text-gray-400">
+              Susisiek su manimi.
+            </p>
             <h2 class="font-header mt-2 text-6xl">
-              Get in touch! <br />
-              Tell me about your project.
+              Susisiek! <br />
+              Papasakok apie savo projektą.
             </h2>
           </div>
           <div
@@ -73,14 +75,14 @@ export default function ContactForm() {
           >
             {sent ? (
               <>
-                <p className="font-header text-4xl">Thank you!</p>
+                <p className="font-header text-4xl">Ačiū!</p>
                 <p className="mt-5 text-lg tracking-wide text-gray-600 dark:text-gray-400">
-                  A message was sent. I will answer as soon as I can.
+                  Pranešimas išsiųstas. Atsakysiu, kai tik galėsiu.
                 </p>
               </>
             ) : (
               <>
-                <p className="font-header text-4xl">Send me a message</p>
+                <p className="font-header text-4xl">Parašyk man žinutę</p>
                 <form
                   className="mt-4 grid grid-cols-1 gap-4 pb-4"
                   onSubmit={handleSubmit(onSubmit)}
@@ -94,7 +96,7 @@ export default function ContactForm() {
                   ></input>
 
                   <label className="block">
-                    <span className="text-gray-300">Name</span>
+                    <span className="text-gray-300">Vardas</span>
                     <input
                       {...register("name", { required: true })}
                       type="text"
@@ -103,20 +105,21 @@ export default function ContactForm() {
                     />
                     {errors.name && (
                       <p className="mt-1 text-orange dark:text-orange">
-                        Please provide a name.
+                        Pateik vardą.
                       </p>
                     )}
                   </label>
                   <label className="block">
                     <span className="text-gray-700 dark:text-gray-300">
-                      Email
+                      El. paštas
                     </span>
                     <input
                       {...register("email", {
-                        required: "Please provide an email to respond.",
+                        required:
+                          "Pateik el. pašto adresą, kad galėčiau atsakyti.",
                         pattern: {
                           value: /^\S+@\S+$/i,
-                          message: "Please enter a valid email",
+                          message: "Pateik galiojanti el. pašto",
                         },
                       })}
                       type="text"
@@ -131,7 +134,7 @@ export default function ContactForm() {
                   </label>
                   <label className="block">
                     <span className="text-gray-700 dark:text-gray-300">
-                      Subject
+                      Tema
                     </span>
                     <input
                       {...register("message_subject", { required: true })}
@@ -141,13 +144,13 @@ export default function ContactForm() {
                     />
                     {errors.message_subject && (
                       <p className="mt-1 text-orange dark:text-orange">
-                        Please provide a subject.
+                        Nurodyk temą.
                       </p>
                     )}
                   </label>
                   <label className="block">
                     <span className="text-gray-700 dark:text-gray-300">
-                      Message
+                      Pranešimas
                     </span>
                     <textarea
                       {...register("message", { required: true })}
@@ -156,7 +159,7 @@ export default function ContactForm() {
                     />
                     {errors.message && (
                       <p className="mt-1 text-orange dark:text-orange">
-                        Please writeme your ideas, questions, etc.
+                        Rašyk savo idėjas, klausimus ir pan.
                       </p>
                     )}
                   </label>
@@ -168,13 +171,13 @@ export default function ContactForm() {
                         type="checkbox"
                       />
                       <span className="text-gray-700 dark:text-gray-300">
-                        I agree to use my data for processing
+                        Sutinku naudoti savo duomenis infomacijos apdorojimui
                       </span>
                     </div>
                     {errors.consent && (
                       <p className="mt-1 text-orange dark:text-orange">
-                        Message cannot be sent without your permission to gather
-                        your provided data in the form.
+                        Pranešimas negali būti siunčiamas be jūsų leidimo rinkti
+                        jūsų pateiktus duomenis užpildytoje anketoje.
                       </p>
                     )}
                   </label>
@@ -188,7 +191,7 @@ export default function ContactForm() {
                        focus:ring-orange
                       "
                     >
-                      Sending a message...
+                      Siunčiamas pranešimas...
                     </div>
                   ) : (
                     <input
@@ -200,14 +203,14 @@ export default function ContactForm() {
                        focus:ring-orange
                       "
                       type="submit"
-                      value="Send message!"
+                      value="Siųsti žinutę!"
                     />
                   )}
                   {sendError && (
                     <p className="mt-4 text-orange dark:text-orange">
-                      Oh no! There was some connection error with messenger.
-                      Please try again and if the error persists please try
-                      later. Or just send me a message by other methods (email,
+                      O ne! Įvyko tam tikra ryšio klaida. Bandykite dar kartą ir
+                      jei klaida išlieka, bandykite vėliau. Arba tiesiog
+                      atsiųskite man žinutę kitais būdais (tiesiogiai el. paštu,
                       sms, ...).
                     </p>
                   )}

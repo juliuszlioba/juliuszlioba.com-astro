@@ -1,16 +1,16 @@
 ---
 import Hero from "../components/homepage/Hero.astro";
 import Layout from "../layouts/Layout.astro";
-import { AboutMe } from "../components/homepage/About";
+import Services from "../components/homepage/Services.astro";
 import PortfolioWeb from "../components/homepage/Portfolio-web.astro";
-import { Services } from "../components/homepage/Services";
+import About from "../components/homepage/About.astro";
 ---
 
 <Layout title="Homepage">
   <main>
     <Hero />
-    <Services client:visible />
+    <Services />
     <PortfolioWeb />
-    <AboutMe client:visible />
+    <About />
   </main>
 </Layout>
