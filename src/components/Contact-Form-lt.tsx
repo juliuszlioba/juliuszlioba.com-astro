@@ -61,7 +61,7 @@ export default function ContactForm() {
         <div class="flex flex-col gap-8 text-center md:flex-row md:text-left">
           <div class="md:w-2/5">
             <p class="uppercase tracking-widest text-gray-400">
-              Susisiek su manimi.
+              Susisiek su manimi
             </p>
             <h2 class="font-header mt-2 text-6xl">
               Susisiek! <br />

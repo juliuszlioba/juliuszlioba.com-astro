@@ -60,7 +60,7 @@ export default function ContactForm() {
       <div class="relative z-10 m-auto max-w-6xl px-4 md:px-8">
         <div class="flex flex-col gap-8 text-center md:flex-row md:text-left">
           <div class="md:w-2/5">
-            <p class="uppercase tracking-widest text-gray-400">Contact me.</p>
+            <p class="uppercase tracking-widest text-gray-400">Contact me</p>
             <h2 class="font-header mt-2 text-6xl">
               Get in touch! <br />
               Tell me about your project.
