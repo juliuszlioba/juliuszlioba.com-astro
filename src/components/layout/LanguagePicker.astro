@@ -11,11 +11,11 @@ const route = getRouteFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<ul class="flex gap-2 justify-center">
+<ul class="flex justify-center divide-x-2 divide-gray-500">
   {
     Object.entries(languages).map(([lang, label]) => {
       return (
-        <li class="text-gray-200 duration-75 hover:text-orange">
+        <li class="text-gray-200 duration-75 hover:text-orange px-2">
           <a href={translatePath(`/${route ? route : ""}`, lang)}>{label}</a>
         </li>
       );

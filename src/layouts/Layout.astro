@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer.astro";
 import Nav from "../components/layout/Nav.astro";
 import { ViewTransitions } from "astro:transitions";
 import { getLangFromUrl } from "../i18n/utils";
+//import Debug from "../components/debug/path.astro";
 
 export interface Props {
   title: string;
@@ -77,6 +78,8 @@ const gtag_id = import.meta.env.PUBLIC_GTAG_ID;
     <Nav />
     <slot />
     <Footer />
+
+    <!-- <Debug /> -->
 
     <script>
       import Alpine from "alpinejs";
