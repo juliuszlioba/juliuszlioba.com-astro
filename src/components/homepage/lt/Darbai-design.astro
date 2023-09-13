@@ -6,73 +6,78 @@ import hbr_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr_desi
 
 <div id="works-design">
   <div class="relative z-0 mt-20 overflow-visible py-20">
-    <div
-      id="works.container"
-      class="relative z-10 m-auto max-w-6xl px-4 md:px-8"
-    >
-      <p class="uppercase tracking-widest text-gray-400">Portfolio</p>
-      <h2 class="font-header mt-2 text-6xl">Dizaino projektai</h2>
-      <div>
-        <div class="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {/* connect724 */}
+    <div x-data="{ shown: false }" x-intersect.once="shown = true;">
+      <div
+        id="works.container"
+        class="relative z-10 m-auto max-w-6xl px-4 md:px-8"
+      >
+        <p class="uppercase tracking-widest text-gray-400">Portfolio</p>
+        <h2 class="font-header mt-2 text-6xl">Dizaino projektai</h2>
+        <div>
           <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            class="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
           >
-            <a href="/portfolio/connect724-corporate-design/">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+            {/* connect724 */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/portfolio/connect724-corporate-design/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
                 >
-                  Pasižiūrėk
-                </p>
-              </div>
-            </a>
-            <Image
-              src={c724_thumbnailImage}
-              alt="c724 GmbH thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.c724design"
-            />
-          </div>
-          {/* hausbrot */}
-          <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
-          >
-            <a href="/portfolio/hausbrot-design/">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Pasižiūrėk
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={c724_thumbnailImage}
+                alt="c724 GmbH thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.c724design"
+              />
+            </div>
+            {/* hausbrot */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/portfolio/hausbrot-design/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
                 >
-                  Pasižiūrėk
-                </p>
-              </div>
-            </a>
-            <Image
-              src={hbr_thumbnailImage}
-              alt="Hausbrot.at thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.hbrdesign"
-            />
-          </div>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Pasižiūrėk
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={hbr_thumbnailImage}
+                alt="Hausbrot.at thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.hbrdesign"
+              />
+            </div>
 
-          <div
-            class="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gray-900 bg-opacity-50"
-          >
-            <p class="tracking-widetext-gray-400 px-8 text-center text-lg">
-              Netrukus bus daugiau pavyzdžių.<br /> Grįžk kiek vėliau.
-            </p>
+            <div
+              class="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gray-900 bg-opacity-50"
+            >
+              <p class="tracking-widetext-gray-400 px-8 text-center text-lg">
+                Netrukus bus daugiau pavyzdžių.<br /> Grįžk kiek vėliau.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="absolute inset-y-0 right-0 h-full w-full overflow-hidden">
-      <div
-        class={`lg:w-2/2 absolute inset-y-0 right-0 z-0 w-9/12 rounded-l-3xl bg-gray-900 opacity-50 duration-1000`}
-      >
+      <div class="absolute inset-y-0 right-0 h-full w-full overflow-hidden">
+        <div
+          class="absolute inset-0 z-0 w-9/12 rounded-r-3xl bg-gray-900 opacity-50 duration-1000 lg:w-1/2"
+          :class="shown ? 'translate-x-0' : '-translate-x-full'"
+        >
+        </div>
       </div>
     </div>
   </div>
