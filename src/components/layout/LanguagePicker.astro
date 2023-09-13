@@ -22,3 +22,20 @@ const translatePath = useTranslatedPath(lang);
     })
   }
 </ul>
+
+<!-- ! DUBUG ONLY -->
+<!-- <div class="fixed bottom-5 left-5 bg-gray-700 p-2 text-left">
+  Lang: {lang}<br />
+   AstroUrl: {Astro.url}<br />
+   RouteFromHelper: {route}<br />
+  {
+    Object.entries(languages).map(([lang, label]) => {
+      return (
+        <>
+          {translatePath(`/${route ? route : ""}`, lang)}
+          <br />
+        </>
+      );
+    })
+  }
+</div> -->
