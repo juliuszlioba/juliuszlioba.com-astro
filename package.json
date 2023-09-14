@@ -18,7 +18,7 @@
     "@fontsource/dm-sans": "^5.0.12",
     "@fontsource/pt-sans": "^5.0.8",
     "@tailwindcss/forms": "^0.5.6",
-    "@types/alpinejs": "^3.7.2",
+    "@types/alpinejs": "^3.13.0",
     "alpinejs": "^3.13.0",
     "astro": "^3.0.13",
     "js-cookie": "^3.0.5",

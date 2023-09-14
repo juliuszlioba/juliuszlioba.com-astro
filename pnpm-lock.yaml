@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.5.6
     version: 0.5.6(tailwindcss@3.3.3)
   '@types/alpinejs':
-    specifier: ^3.7.2
-    version: 3.7.2
+    specifier: ^3.13.0
+    version: 3.13.0
   alpinejs:
     specifier: ^3.13.0
     version: 3.13.0
@@ -981,10 +981,8 @@ packages:
       tailwindcss: 3.3.3
     dev: false
 
-  /@types/alpinejs@3.7.2:
-    resolution: {integrity: sha512-M/PAVysvGxOlhifP/6XmO8bj5HW9w+Ygr03PdryM3tCb1KuQEaAAvVcyeZc5T75PbjH3dCzy/M/w/nJEE0FTSg==}
-    dependencies:
-      '@vue/reactivity': 3.3.4
+  /@types/alpinejs@3.13.0:
+    resolution: {integrity: sha512-OZ/hZD3DmrJJOylcLlgsJkLIKOrXhIaWWJF48Zu+V2VkSY2+yQ66uqVRjG0xzQKSAiGGdKTW4/bcqJujO0HKHw==}
     dev: false
 
   /@types/babel__core@7.20.1:
@@ -1074,18 +1072,8 @@ packages:
       '@vue/shared': 3.1.5
     dev: false
 
-  /@vue/reactivity@3.3.4:
-    resolution: {integrity: sha512-kLTDLwd0B1jG08NBF3R5rqULtv/f8x3rOFByTDz4J53ttIQEDmALqKqXY0J+XQeN0aV2FBxY8nJDf88yvOPAqQ==}
-    dependencies:
-      '@vue/shared': 3.3.4
-    dev: false
-
   /@vue/shared@3.1.5:
     resolution: {integrity: sha512-oJ4F3TnvpXaQwZJNF3ZK+kLPHKarDmJjJ6jyzVNDKH9md1dptjC7lWR//jrGuLdek/U6iltWxqAnYOu8gCiOvA==}
-    dev: false
-
-  /@vue/shared@3.3.4:
-    resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
     dev: false
 
   /acorn@8.10.0:
