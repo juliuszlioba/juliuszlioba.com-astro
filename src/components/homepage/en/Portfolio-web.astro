@@ -6,166 +6,197 @@ import zp_thumbnailImage from "../../../../assets/images/portfolio/zustellpartne
 import leituviaiat_thumbnailImage from "../../../../assets/images/portfolio/lietuviai-at/lietuviai-at_thumbnail.jpg";
 import hbr_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr_thumbnail.jpg";
 import dariuszaida_thumbnailImage from "../../../../assets/images/portfolio/dariuszaida/portfolio_dariuszaida_thumbnail.jpg";
+import energypal_thumbnailImage from "../../../../assets/images/portfolio/energypal/energypal_thumbnail.jpg";
 ---
 
 <div id="works-web">
   <div class="relative z-0 mt-20 overflow-visible py-20">
-    <div
-      id="works.container"
-      class="relative z-10 m-auto max-w-6xl px-4 md:px-8"
-    >
-      <p class="uppercase tracking-widest text-gray-400">Portfolio</p>
-      <h2 class="font-header mt-2 text-6xl">Web projects</h2>
-      <div>
-        <div class="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {/* moviesNight */}
+    <div x-data="{ shown: false }" x-intersect.once="shown = true;">
+      <div
+        id="works.container"
+        class="relative z-10 m-auto max-w-6xl px-4 md:px-8"
+      >
+        <p class="uppercase tracking-widest text-gray-400">Portfolio</p>
+        <h2 class="font-header mt-2 text-6xl">Web projects</h2>
+        <div>
           <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            class="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
           >
-            <a href="/en/portfolio/moviesnight/">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+            {/* moviesNight */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/moviesnight/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
                 >
-                  Check it out
-                </p>
-              </div>
-            </a>
-            <Image
-              src={moviesNight_thumbnailImage}
-              alt="moviesNight thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.moviesNight"
-            />
-          </div>
-          {/* connect724 */}
-          <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
-          >
-            <a href="/en/portfolio/connect724-website/">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={moviesNight_thumbnailImage}
+                alt="moviesNight thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.moviesNight"
+              />
+            </div>
+            {/* connect724 */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/connect724-website/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
                 >
-                  Check it out
-                </p>
-              </div>
-            </a>
-            <Image
-              src={c724_thumbnailImage}
-              alt="c724 GmbH thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.c724"
-            />
-          </div>
-          {/* hausbrot */}
-          <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
-          >
-            <a href="/en/portfolio/hausbrot-webshop/">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={c724_thumbnailImage}
+                alt="c724 GmbH thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.c724"
+              />
+            </div>
+            {/* hausbrot */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/hausbrot-webshop/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
                 >
-                  Check it out
-                </p>
-              </div>
-            </a>
-            <Image
-              src={hbr_thumbnailImage}
-              alt="Hausbrot.at thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.hbr"
-            />
-          </div>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={hbr_thumbnailImage}
+                alt="Hausbrot.at thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.hbr"
+              />
+            </div>
 
-          {/* lietuviia.at */}
-          <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
-          >
-            <a href="/en/portfolio/lietuviai-at/">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+            {/* energypal */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/energypal/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
                 >
-                  Check it out
-                </p>
-              </div>
-            </a>
-            <Image
-              src={leituviaiat_thumbnailImage}
-              alt="lietuviai.at thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.lietuviaiat"
-            />
-          </div>
-          {/* zustellpartner */}
-          <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
-          >
-            <a href="/en/portfolio/zustellpartner/">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
-                >
-                  Check it out
-                </p>
-              </div>
-            </a>
-            <Image
-              src={zp_thumbnailImage}
-              alt="zustellpartner.at thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.zustellpartner"
-            />
-          </div>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={energypal_thumbnailImage}
+                alt="energypal.at thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.energypal"
+              />
+            </div>
 
-          {/* dariuszaida */}
-          <div
-            class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
-          >
-            <a href="/en/portfolio/dariuszaida">
-              <div
-                class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-              >
-                <p
-                  class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+            {/* lietuviia.at */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/lietuviai-at/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
                 >
-                  Check it out
-                </p>
-              </div>
-            </a>
-            <Image
-              src={dariuszaida_thumbnailImage}
-              alt="dariuszaida.lt thumbnail"
-              class="h-full object-cover object-left"
-              transition:name="works.dariuszaida"
-            />
-          </div>
-          <div
-            class="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gray-900 bg-opacity-50"
-          >
-            <p class="tracking-widetext-gray-400 px-8 text-center text-lg">
-              More examples are comming soon. Come back a bit later.
-            </p>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={leituviaiat_thumbnailImage}
+                alt="lietuviai.at thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.lietuviaiat"
+              />
+            </div>
+
+            {/* zustellpartner */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/zustellpartner/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
+                >
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={zp_thumbnailImage}
+                alt="zustellpartner.at thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.zustellpartner"
+              />
+            </div>
+
+            {/* dariuszaida */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/dariuszaida">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
+                >
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={dariuszaida_thumbnailImage}
+                alt="dariuszaida.lt thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.dariuszaida"
+              />
+            </div>
+
+            <div
+              class="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gray-900 bg-opacity-50"
+            >
+              <p class="tracking-widetext-gray-400 px-8 text-center text-lg">
+                More examples are comming soon. Come back a bit later.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="absolute inset-y-0 right-0 h-full w-full overflow-hidden">
-      <div
-        class={`lg:w-2/2 absolute inset-y-0 right-0 z-0 w-9/12 rounded-l-3xl bg-gray-900 opacity-50 duration-1000`}
-      >
+      <div class="absolute inset-y-0 right-0 h-full w-full overflow-hidden">
+        <div
+          class={`lg:w-2/2 absolute inset-y-0 right-0 z-0 w-9/12 rounded-l-3xl bg-gray-900 opacity-50 duration-1000`}
+          :class="shown ? '-translate-x-0' : 'translate-x-full'"
+        >
+        </div>
       </div>
     </div>
   </div>

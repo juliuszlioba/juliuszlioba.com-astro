@@ -89,6 +89,29 @@ import energypal_thumbnailImage from "../../../../assets/images/portfolio/energy
               />
             </div>
 
+            {/* energypal */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/portfolio/energypal/">
+                <div
+                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
+                >
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Pasižiūrėk
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={energypal_thumbnailImage}
+                alt="energypal.at thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.energypal"
+              />
+            </div>
+
             {/* lietuviia.at */}
             <div
               class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
@@ -135,29 +158,6 @@ import energypal_thumbnailImage from "../../../../assets/images/portfolio/energy
               />
             </div>
 
-            {/* energypal */}
-            <div
-              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
-            >
-              <a href="/portfolio/energypal/">
-                <div
-                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
-                >
-                  <p
-                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
-                  >
-                    Pasižiūrėk
-                  </p>
-                </div>
-              </a>
-              <Image
-                src={energypal_thumbnailImage}
-                alt="energypal.at thumbnail"
-                class="h-full object-cover object-left"
-                transition:name="works.energypal"
-              />
-            </div>
-
             {/* dariuszaida */}
             <div
               class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
@@ -180,6 +180,7 @@ import energypal_thumbnailImage from "../../../../assets/images/portfolio/energy
                 transition:name="works.dariuszaida"
               />
             </div>
+
             <div
               class="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-gray-900 bg-opacity-50"
             >
