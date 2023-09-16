@@ -3,10 +3,12 @@ import { Image } from "astro:assets";
 import Layout from "../../../layouts/Layout.astro";
 
 import c724_thumbnailImage from "../../../../assets/images/portfolio/c724/c724design_thumbnail.png";
-import c724_content_img_01 from "../../../../assets/images/portfolio/c724/c724_main_part01.jpg";
-import c724_content_img_02 from "../../../../assets/images/portfolio/c724/c724_main_part02.png";
-import c724_content_img_03 from "../../../../assets/images/portfolio/c724/c724_main_part03.jpg";
-import c724_content_img_05 from "../../../../assets/images/portfolio/c724/c724_main_part05.jpg";
+import c724_content_img_01 from "../../../../assets/images/portfolio/c724/c724-design_content_part01.jpg";
+import c724_content_img_02 from "../../../../assets/images/portfolio/c724/c724-design_content_part02.png";
+import c724_content_img_03 from "../../../../assets/images/portfolio/c724/c724-design_content_part03.jpg";
+import c724_content_img_04 from "../../../../assets/images/portfolio/c724/c724-design_content_part04.jpg";
+import c724_content_img_05 from "../../../../assets/images/portfolio/c724/c724-design_content_part05.jpg";
+import c724_content_img_06 from "../../../../assets/images/portfolio/c724/c724-design_content_part06.jpg";
 ---
 
 <Layout title="Project | connect724">
@@ -51,7 +53,7 @@ import c724_content_img_05 from "../../../../assets/images/portfolio/c724/c724_m
             src={c724_thumbnailImage}
             alt="connect724 Project Thumbnail"
             class="rounded-2xl"
-            transition:name="works.c724design"
+            transition:name="works.c724designpresentation"
           />
         </div>
       </div>
@@ -116,7 +118,19 @@ import c724_content_img_05 from "../../../../assets/images/portfolio/c724/c724_m
               secondary colour to make more contrast looking appeal.
             </p>
             <Image
+              src={c724_content_img_04}
+              alt="print materials"
+              class="rounded-2xl"
+            />
+
+            <Image
               src={c724_content_img_05}
+              alt="print materials"
+              class="rounded-2xl"
+            />
+
+            <Image
+              src={c724_content_img_06}
               alt="print materials"
               class="rounded-2xl"
             />

@@ -16,11 +16,11 @@ Web Projects
 
 Design projects
 
-| Project                          | Status LT | Status EN | Comments |
-| :------------------------------- | :-------- | :-------- | :------- |
-| connect724 corporate design      | `done`    | `done`    | -        |
-| hausbrot stuff                   | `done`    | `done`    | -        |
-| connect724 strategy presentation | `done`    | `done`    | -        |
-| velcom                           | `planed`  | `planed`  | -        |
-| zustellpartner posters           | `planed`  | `planed`  | -        |
-| hausbrot product photography     | `planed`  | `planed`  | -        |
+| Project                          | Status LT     | Status EN     | Comments |
+| :------------------------------- | :------------ | :------------ | :------- |
+| connect724 corporate design      | `done`        | `done`        | -        |
+| hausbrot stuff                   | `in progress` | `in progress` | -        |
+| connect724 strategy presentation | `done`        | `done`        | -        |
+| velcom                           | `done`        | `done`        | -        |
+| zustellpartner posters           | `planed`      | `planed`      | -        |
+| hausbrot product photography     | `planed`      | `planed`      | -        |
