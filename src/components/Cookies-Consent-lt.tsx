@@ -56,7 +56,7 @@ export const CookiesConsentLt = () => {
             Ši svetainė naudoja slapukus
           </div>
           <div className="pb-1">
-            <p className="text-gray-400 text-left">
+            <p className="text-left text-gray-400">
               Šioje svetainėje naudojami slapukai, siekiant užtikrinti, kad mano
               svetainėje gautumėte geriausią patirtį.
               <a href="/privacy-policy">
@@ -69,13 +69,13 @@ export const CookiesConsentLt = () => {
           </div>
           <div className="flex w-full flex-col gap-2 md:flex-row">
             <button
-              className="grow rounded-lg border-2 border-orange bg-gray-600 py-2 px-4 hover:bg-orange"
+              className="grow rounded-lg border-2 border-orange bg-gray-600 px-4 py-2 hover:bg-orange"
               onClick={handleAllAccept}
             >
               Sutinku su viskuo
             </button>
             <button
-              className="rounded-lg border-2 border-gray-400 bg-gray-600 py-2 px-4 hover:border-orange hover:bg-orange"
+              className="rounded-lg border-2 border-gray-400 bg-gray-600 px-4 py-2 hover:border-orange hover:bg-orange"
               onClick={handleAllReject}
             >
               Aš nesutinku
@@ -83,14 +83,14 @@ export const CookiesConsentLt = () => {
 
             {openSettings ? (
               <button
-                className="rounded-lg border-2 border-gray-400 bg-gray-600 py-2 px-4 hover:border-orange hover:bg-orange"
+                className="rounded-lg border-2 border-gray-400 bg-gray-600 px-4 py-2 hover:border-orange hover:bg-orange"
                 onClick={handelSaveSettings}
               >
                 Išsaugoti nustatymus
               </button>
             ) : (
               <button
-                className="rounded-lg border-2 border-gray-400 bg-gray-600 py-2 px-4 hover:border-orange hover:bg-orange"
+                className="rounded-lg border-2 border-gray-400 bg-gray-600 px-4 py-2 hover:border-orange hover:bg-orange"
                 onClick={() => setOpenSettings(!openSettings)}
               >
                 Noriu pasirinkti, su kuo sutinku

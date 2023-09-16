@@ -56,7 +56,7 @@ export const CookiesConsent = () => {
             This website use Cookies
           </div>
           <div className="pb-1">
-            <p className="text-gray-400 text-left">
+            <p className="text-left text-gray-400">
               This website uses cookies to ensure you get best experiance on my
               website.
               <a href="/privacy-policy">
@@ -69,13 +69,13 @@ export const CookiesConsent = () => {
           </div>
           <div className="flex w-full flex-col gap-2 md:flex-row">
             <button
-              className="grow rounded-lg border-2 border-orange bg-gray-600 py-2 px-4 hover:bg-orange"
+              className="grow rounded-lg border-2 border-orange bg-gray-600 px-4 py-2 hover:bg-orange"
               onClick={handleAllAccept}
             >
               I consent to all
             </button>
             <button
-              className="rounded-lg border-2 border-gray-400 bg-gray-600 py-2 px-4 hover:border-orange hover:bg-orange"
+              className="rounded-lg border-2 border-gray-400 bg-gray-600 px-4 py-2 hover:border-orange hover:bg-orange"
               onClick={handleAllReject}
             >
               I do not consent
@@ -83,14 +83,14 @@ export const CookiesConsent = () => {
 
             {openSettings ? (
               <button
-                className="rounded-lg border-2 border-gray-400 bg-gray-600 py-2 px-4 hover:border-orange hover:bg-orange"
+                className="rounded-lg border-2 border-gray-400 bg-gray-600 px-4 py-2 hover:border-orange hover:bg-orange"
                 onClick={handelSaveSettings}
               >
                 Save settings
               </button>
             ) : (
               <button
-                className="rounded-lg border-2 border-gray-400 bg-gray-600 py-2 px-4 hover:border-orange hover:bg-orange"
+                className="rounded-lg border-2 border-gray-400 bg-gray-600 px-4 py-2 hover:border-orange hover:bg-orange"
                 onClick={() => setOpenSettings(!openSettings)}
               >
                 I want to choose what I consent to
