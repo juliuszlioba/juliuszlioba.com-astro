@@ -1,0 +1,107 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+
+import hbr_thumbnailImage from "../../../assets/images/portfolio/velcom/velcom_thumbnail.jpg";
+import hbr_content_img_01 from "../../../assets/images/portfolio/velcom/velcom_content_part1.jpg";
+import hbr_content_img_02 from "../../../assets/images/portfolio/velcom/velcom_content_part2.jpg";
+import hbr_content_img_03 from "../../../assets/images/portfolio/velcom/velcom_content_part3.jpg";
+---
+
+<Layout title="Project | Hausbrot.at">
+  <div class="relative z-0 pb-12 pt-48">
+    <div class="relative z-10 m-auto max-w-6xl px-4 md:px-8">
+      <div
+        class="flex flex-col items-center gap-8 text-center md:flex-row md:text-left"
+      >
+        <div class="md:w-1/2">
+          <a
+            href="/#works-design"
+            class="z-50 mb-12 inline-flex items-center gap-2 rounded-lg bg-gray-800 px-3 py-2 hover:bg-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              ></path>
+            </svg>
+             Grįžti atgal
+          </a>
+          <p class="uppercase tracking-widest text-gray-300">Projektas</p>
+          <h2 class="font-header mt-2 text-6xl">velcom brošiūra</h2>
+          <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
+            Dalomoji brošiūra konferencijai
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <Image
+            src={hbr_thumbnailImage}
+            alt="hausbrot.at Project Thumbnail"
+            class="rounded-2xl"
+            transition:name="works.velcom"
+          />
+        </div>
+      </div>
+    </div>
+    <div class={`absolute inset-0 h-full z-0 bg-gray-900 dark:opacity-50`}>
+    </div>
+  </div>
+  <div class={`relative py-20 duration-300 overflow-hidden`}>
+    <div class="relative z-10 m-auto max-w-6xl px-4 md:px-8">
+      <div class="md:flex">
+        <div class="mb-12 md:w-1/4">
+          <p class="uppercase tracking-widest text-gray-300">Atlikti darbai</p>
+          <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
+            Brošiūros dizaino kūrimas
+          </p>
+        </div>
+
+        <div class="ml-auto max-w-3xl md:w-3/4">
+          <p class="mb-5 uppercase tracking-widest text-gray-300">Projektas</p>
+          <div class="flex flex-col gap-8">
+            <p class="text-lg tracking-wide text-gray-400">
+              Užduotis buvo sukurti dalomoją brošiūrą skirta konferencijos
+              dalyviams.
+            </p>
+
+            <div>
+              <Image
+                src={hbr_content_img_01}
+                alt="velcom dalomoji brošiūra 1"
+                class="rounded-t-2xl"
+              />
+
+              <Image
+                src={hbr_content_img_02}
+                alt="velcom dalomoji brošiūra"
+                class="rounded-b-2xl"
+              />
+            </div>
+
+            <Image
+              src={hbr_content_img_03}
+              alt="velcom dalomoji brošiūra"
+              class="rounded-b-2xl"
+            />
+          </div>
+
+          <p
+            class="mt-8 border-t-2 border-dashed border-gray-700 pt-12 uppercase tracking-widest text-gray-400"
+          >
+            Šaltiniai
+          </p>
+          <p class="max-w-prose text-sm tracking-wide text-gray-400">
+            &copy; Kai kurie naudojami vaizdai priklauso connect724 GmbH.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

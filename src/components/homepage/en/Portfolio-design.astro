@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import c724_thumbnailImage from "../../../../assets/images/portfolio/c724/c724design_thumbnail.png";
 import hbr_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr_design_thumbnail.png";
+import c724_thumbnailImage from "../../../../assets/images/portfolio/c724/c724design_thumbnail.png";
+import c724presentation_thumbnailImage from "../../../../assets/images/portfolio/c724/c724_Strategy-Thumbnail-EN.jpg";
+import velcom_thumbnailImage from "../../../../assets/images/portfolio/velcom/velcom_thumbnail_2.jpg";
 ---
 
 <div id="works-design">
@@ -17,14 +19,43 @@ import hbr_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr_desi
           <div
             class="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
           >
+            {/* hausbrot */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/hausbrot-design/">
+                <div
+                  class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
+                >
+                  <h2 class="font-header px-4 py-2 text-center text-2xl">
+                    hausbrot.at corprorate design
+                  </h2>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Check it out
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={hbr_thumbnailImage}
+                alt="Hausbrot.at thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.hbrdesign"
+              />
+            </div>
+
             {/* connect724 */}
             <div
               class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
             >
               <a href="/en/portfolio/connect724-corporate-design/">
                 <div
-                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
+                  class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
                 >
+                  <h2 class="font-header px-4 py-2 text-center text-2xl">
+                    connect724 corprorate design
+                  </h2>
                   <p
                     class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
                   >
@@ -39,14 +70,18 @@ import hbr_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr_desi
                 transition:name="works.c724design"
               />
             </div>
-            {/* hausbrot */}
+
+            {/* connect724 */}
             <div
               class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
             >
-              <a href="/en/portfolio/hausbrot-design/">
+              <a href="/en/portfolio/connect724-presentation/">
                 <div
-                  class="absolute inset-0 z-10 flex items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-40 hover:opacity-100"
+                  class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
                 >
+                  <h2 class="font-header px-4 py-2 text-center text-2xl">
+                    connect724 presentation
+                  </h2>
                   <p
                     class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
                   >
@@ -55,10 +90,36 @@ import hbr_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr_desi
                 </div>
               </a>
               <Image
-                src={hbr_thumbnailImage}
-                alt="Hausbrot.at thumbnail"
+                src={c724presentation_thumbnailImage}
+                alt="c724 GmbH thumbnail"
                 class="h-full object-cover object-left"
-                transition:name="works.hbrdesign"
+                transition:name="works.c724design"
+              />
+            </div>
+
+            {/* velcom Presentation */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/en/portfolio/velcom/">
+                <div
+                  class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
+                >
+                  <h2 class="font-header px-4 py-2 text-center text-2xl">
+                    velcom brochure
+                  </h2>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Pasižiūrėk
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={velcom_thumbnailImage}
+                alt="c724 GmbH thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.velcompresentation"
               />
             </div>
 

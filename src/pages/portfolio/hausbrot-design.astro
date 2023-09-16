@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
 import hbr_thumbnailImage from "../../../assets/images/portfolio/hbr/hbr_design_thumbnail.png";
-import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_main_part01.jpg";
+import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_design_content1.jpg";
 ---
 
 <Layout title="Project | Hausbrot.at">
@@ -37,12 +37,12 @@ import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_main_pa
           <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
             Skirtingos atributikos kūrimas
           </p>
-          <div class="inline-flex pt-6 pb-4 gap-4 items-center">
+          <div class="inline-flex items-center gap-4 pb-4 pt-6">
             <a
               href="https://hausbrot.at/"
               target="_blank"
               rel="nofollow noreferrer"
-              class="focus:ring-site-primary flex items-center rounded-full bg-orange px-6 py-2 text-lg hover:bg-orange-light focus:ring-4 gap-2"
+              class="focus:ring-site-primary flex items-center gap-2 rounded-full bg-orange px-6 py-2 text-lg hover:bg-orange-light focus:ring-4"
             >
               Aplankyti hausbrot.at
               <svg
@@ -51,7 +51,7 @@ import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_main_pa
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                class="h-6 w-6"
               >
                 <path
                   stroke-linecap="round"
@@ -101,38 +101,29 @@ import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_main_pa
             </p>
           </div>
 
-          <p class="mb-5 uppercase tracking-widest text-gray-300">Projektas</p>
+          <p class="mb-5 uppercase tracking-widest text-gray-300">Projektai</p>
           <div class="flex flex-col gap-8">
-            <p class="text-gray-4 text-lg tracking-wide text-gray-400">
-              Darbas buvo visiškai atnaujinti senosios svetainės dizainą, kad
-              būtų pritaikytos naujos įmonės dizaino taisyklės.
+            <p class="text-lg tracking-wide text-gray-400">
+              Paruoštų įmonės dizaino kalbos taisyklių taikymas įvairuose
+              reklamos projektuose.
             </p>
+
             <Image
               src={hbr_content_img_01}
               alt="sketches"
               class="rounded-2xl"
             />
-            <p class="text-lg tracking-wide text-gray-400">
-              Imonės dizaino pasiūlymą atliko konsultacinė įmonė, o mano darbas
-              vėliau buvo tai pritaikyti skirtingai įmonės atributikai.
-            </p>
-
-            <!-- <Image src={hbr_content_img_02} alt="website" class="rounded-2xl" /> -->
-
-            <p class="text-lg tracking-wide text-gray-400">Text</p>
-
-            <p class="text-lg tracking-wide text-gray-400">Text</p>
 
             <p class="text-lg tracking-wide text-gray-400">
-              Galite apsilankyti svetainėje internete.<br /> (Visas parduotuvės
-              puslapis tik vokiečių kalba)
+              Galite apsilankyti svetainėje internete ir susipažinti daugiau su
+              kompaniją.<br /> (Visas parduotuvės puslapis tik vokiečių kalba)
             </p>
             <div class="inline-flex">
               <a
                 href="https://hausbrot.at/"
                 target="_blank"
                 rel="nofollow noreferrer"
-                class="focus:ring-site-primary flex items-center rounded-full bg-orange px-6 py-2 text-lg hover:bg-orange-light focus:ring-4 gap-2"
+                class="focus:ring-site-primary flex items-center gap-2 rounded-full bg-orange px-6 py-2 text-lg hover:bg-orange-light focus:ring-4"
               >
                 Aplankyti internetinę parduotuvę
                 <svg
@@ -141,7 +132,7 @@ import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_main_pa
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="h-6 w-6"
                 >
                   <path
                     stroke-linecap="round"
