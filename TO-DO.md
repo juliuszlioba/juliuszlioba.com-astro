@@ -22,5 +22,5 @@ Design projects
 | hausbrot stuff                   | `in progress` | `in progress` | -        |
 | connect724 strategy presentation | `done`        | `done`        | -        |
 | velcom                           | `done`        | `done`        | -        |
-| zustellpartner posters           | `planed`      | `planed`      | -        |
+| zustellpartner posters           | `done`        | `done`        | -        |
 | hausbrot product photography     | `planed`      | `planed`      | -        |

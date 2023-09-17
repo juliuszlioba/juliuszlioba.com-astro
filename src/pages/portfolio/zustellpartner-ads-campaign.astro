@@ -2,15 +2,13 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
-import hbr_thumbnailImage from "../../../assets/images/portfolio/c724/c724_Strategy-Thumbnail.jpg";
-import hbr_content_img_01 from "../../../assets/images/portfolio/c724/c724_Strategy-part1-LT.jpg";
-import hbr_content_img_02 from "../../../assets/images/portfolio/c724/c724_Strategy-part2.jpg";
-import hbr_content_img_03 from "../../../assets/images/portfolio/c724/c724_Strategy-part3.jpg";
-import hbr_content_img_04 from "../../../assets/images/portfolio/c724/c724_Strategy-part4-LT.jpg";
-import hbr_content_img_05 from "../../../assets/images/portfolio/c724/c724_Strategy-part5.jpg";
+import zp_thumbnailImage from "../../../assets/images/portfolio/zustellpartner/zp-posters-thumbnail.jpg";
+import zp_content_img_01 from "../../../assets/images/portfolio/zustellpartner/zp-posters-content-1.jpg";
+import zp_content_img_02 from "../../../assets/images/portfolio/zustellpartner/zp-posters-content-2.jpg";
+import zp_content_img_03 from "../../../assets/images/portfolio/zustellpartner/zp-posters-content-3.jpg";
 ---
 
-<Layout title="Project | Hausbrot.at">
+<Layout title="Project | zustellpartner.at" noindex={true}>
   <div class="relative z-0 pb-12 pt-48">
     <div class="relative z-10 m-auto max-w-6xl px-4 md:px-8">
       <div
@@ -37,17 +35,17 @@ import hbr_content_img_05 from "../../../assets/images/portfolio/c724/c724_Strat
              Grįžti atgal
           </a>
           <p class="uppercase tracking-widest text-gray-300">Projektas</p>
-          <h2 class="font-header mt-2 text-6xl">connect724 prezentacija</h2>
+          <h2 class="font-header mt-2 text-6xl">zustellpartner.at plakatai</h2>
           <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
-            Vizualiniai elementai konferencijai
+            Reklaminė kompanija
           </p>
         </div>
         <div class="md:w-1/2">
           <Image
-            src={hbr_thumbnailImage}
-            alt="hausbrot.at Project Thumbnail"
+            src={zp_thumbnailImage}
+            alt="zustellpartner.at Project Thumbnail"
             class="rounded-2xl"
-            transition:name="works.c724designpresentation"
+            transition:name="works.zpadscampaign"
           />
         </div>
       </div>
@@ -61,50 +59,25 @@ import hbr_content_img_05 from "../../../assets/images/portfolio/c724/c724_Strat
         <div class="mb-12 md:w-1/4">
           <p class="uppercase tracking-widest text-gray-300">Atlikti darbai</p>
           <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
-            prezentacijos vizualiniai elementai
-          </p>
-          <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
-            Brošiūros dizaino kūrimas
-          </p>
-          <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
             Plakatai
+          </p>
+          <p class="mt-5 max-w-prose text-lg tracking-wide text-gray-400">
+            Spaudos reklama
           </p>
         </div>
 
         <div class="ml-auto max-w-3xl md:w-3/4">
           <p class="mb-5 uppercase tracking-widest text-gray-300">Projektas</p>
           <div class="flex flex-col gap-8">
-            <p class="text-lg tracking-wide text-gray-400">
-              Užduotis buvo sukurti dalomoją brošiūrą skirta konferencijos
-              dalyviams ir visus kitus vaizdinius elementus vėliau naudojamus
-              prezentacijoje. Iš pateiktų raktinių žodžių „planetos“, „ateitis“
-              ir „kelionė“, greitai gimė idėja pavaizduoti ją kaip planetų
-              sistemą.
+            <p class="text-gray-4 text-lg tracking-wide text-gray-400">
+              Užduotis buvo sukurti reklaminę kampaniją, ieškantiems lankstaus
+              antrinio darbo ne įprastomis darbo valandomis.
             </p>
+            <Image src={zp_content_img_01} alt="sketches" class="rounded-2xl" />
 
-            <div>
-              <Image
-                src={hbr_content_img_01}
-                alt="Prezentacijos_dalis-1"
-                class="rounded-t-2xl"
-              />
+            <Image src={zp_content_img_02} alt="website" class="rounded-2xl" />
 
-              <Image src={hbr_content_img_02} alt="Prezentacijos_dalis-2" />
-
-              <Image src={hbr_content_img_03} alt="Prezentacijos_dalis-3" />
-
-              <Image
-                src={hbr_content_img_04}
-                alt="Prezentacijos_dalis-4"
-                class="rounded-b-2xl"
-              />
-            </div>
-
-            <Image
-              src={hbr_content_img_05}
-              alt="Atributika"
-              class="rounded-2xl"
-            />
+            <Image src={zp_content_img_03} alt="website" class="rounded-2xl" />
 
             <p
               class="mt-8 border-t-2 border-dashed border-gray-700 pt-12 uppercase tracking-widest text-gray-400"
@@ -112,7 +85,8 @@ import hbr_content_img_05 from "../../../assets/images/portfolio/c724/c724_Strat
               Šaltiniai
             </p>
             <p class="max-w-prose text-sm tracking-wide text-gray-400">
-              &copy; Kai kurie naudojami vaizdai priklauso connect724 GmbH.
+              &copy; Kai kurie naudojami vaizdai priklauso Cimedia
+              Printmedienvertriebs GmbH ir WNB Zustell GmbH.
             </p>
           </div>
         </div>

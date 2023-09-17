@@ -47,6 +47,7 @@ export const routes = {
     "lietuviai-at": "portfolio/lietuviai-at",
     velcom: "portfolio/velcom",
     zustellpartner: "portfolio/zustellpartner",
+    "zustellpartner-ads-campaign": "portfolio/zustellpartner-ads-campaign",
   },
   en: {
     kontaktai: "contacts",
@@ -62,6 +63,6 @@ export const routes = {
     "portfolio/hausbrot-design": "hausbrot-design",
     "portfolio/lietuviai-at": "lietuviai-at",
     "portfolio/velcom": "velcom",
-    "portfolio/zustellpartner": "zustellpartner",
+    "portfolio/zustellpartner-ads-campaign": "zustellpartner-ads-campaign",
   },
 };

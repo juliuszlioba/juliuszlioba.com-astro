@@ -4,6 +4,7 @@ import hbr_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr_desi
 import c724_thumbnailImage from "../../../../assets/images/portfolio/c724/c724design_thumbnail.png";
 import c724presentation_thumbnailImage from "../../../../assets/images/portfolio/c724/c724_Strategy-Thumbnail.jpg";
 import velcom_thumbnailImage from "../../../../assets/images/portfolio/velcom/velcom_thumbnail_2.jpg";
+import zpadscampaign_thumbnailImage from "../../../../assets/images/portfolio/zustellpartner/zp-posters-thumbnail.jpg";
 ---
 
 <div id="works-design">
@@ -28,7 +29,7 @@ import velcom_thumbnailImage from "../../../../assets/images/portfolio/velcom/ve
                   class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
                 >
                   <h2 class="font-header px-4 py-2 text-center text-2xl">
-                    hausbrot.at Korporatyvinis dizainas
+                    hausbrot.at<br /> Korporatyvinis dizainas
                   </h2>
                   <p
                     class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
@@ -54,7 +55,7 @@ import velcom_thumbnailImage from "../../../../assets/images/portfolio/velcom/ve
                   class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
                 >
                   <h2 class="font-header px-4 py-2 text-center text-2xl">
-                    connect724 Korporatyvinis dizainas
+                    connect724<br /> Korporatyvinis dizainas
                   </h2>
                   <p
                     class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
@@ -120,6 +121,32 @@ import velcom_thumbnailImage from "../../../../assets/images/portfolio/velcom/ve
                 alt="c724 GmbH thumbnail"
                 class="h-full object-cover object-left"
                 transition:name="works.velcompresentation"
+              />
+            </div>
+
+            {/* zustellpartner ads campaign */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/portfolio/zustellpartner-ads-campaign/">
+                <div
+                  class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
+                >
+                  <h2 class="font-header px-4 py-2 text-center text-2xl">
+                    zustellpartner.at<br /> Reklaminė kompanija
+                  </h2>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Pasižiūrėk
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={zpadscampaign_thumbnailImage}
+                alt="c724 GmbH thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.zpadscampaign"
               />
             </div>
 
