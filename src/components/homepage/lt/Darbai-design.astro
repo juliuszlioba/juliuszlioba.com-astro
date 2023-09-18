@@ -5,6 +5,7 @@ import c724_thumbnailImage from "../../../../assets/images/portfolio/c724/c724de
 import c724presentation_thumbnailImage from "../../../../assets/images/portfolio/c724/c724_Strategy-Thumbnail.jpg";
 import velcom_thumbnailImage from "../../../../assets/images/portfolio/velcom/velcom_thumbnail_2.jpg";
 import zpadscampaign_thumbnailImage from "../../../../assets/images/portfolio/zustellpartner/zp-posters-thumbnail.jpg";
+import hbrphotography_thumbnailImage from "../../../../assets/images/portfolio/hbr/hbr-product_photography_thumbnail.jpg";
 ---
 
 <div id="works-design">
@@ -147,6 +148,32 @@ import zpadscampaign_thumbnailImage from "../../../../assets/images/portfolio/zu
                 alt="c724 GmbH thumbnail"
                 class="h-full object-cover object-left"
                 transition:name="works.zpadscampaign"
+              />
+            </div>
+
+            {/* Produktų fotografija */}
+            <div
+              class="relative aspect-square overflow-hidden rounded-2xl border-2 border-transparent bg-gray-900 duration-150 hover:scale-105 hover:border-2 hover:border-orange"
+            >
+              <a href="/portfolio/hausbrot-photography/">
+                <div
+                  class="absolute inset-0 z-10 flex flex-col items-center justify-center opacity-0 duration-150 hover:bg-orange hover:bg-opacity-80 hover:opacity-100"
+                >
+                  <h2 class="font-header px-4 py-2 text-center text-2xl">
+                    Produktų fotografija
+                  </h2>
+                  <p
+                    class="flex items-center rounded-full bg-orange px-6 py-2 text-xl"
+                  >
+                    Pasižiūrėk
+                  </p>
+                </div>
+              </a>
+              <Image
+                src={hbrphotography_thumbnailImage}
+                alt="c724 GmbH thumbnail"
+                class="h-full object-cover object-left"
+                transition:name="works.hbrphotography"
               />
             </div>
 
