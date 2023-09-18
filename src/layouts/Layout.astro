@@ -64,7 +64,7 @@ const gtag_id = import.meta.env.PUBLIC_GTAG_ID;
       });
     </script>
 
-    <script is:raw define:vars={{ gtag_id }}>
+    <script is:inline define:vars={{ gtag_id }}>
       // prettier-ignore
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -75,8 +75,13 @@ const gtag_id = import.meta.env.PUBLIC_GTAG_ID;
   </head>
   <body>
     <!-- prettier-ignore -->
-    <noscript><iframe src=`https://www.googletagmanager.com/ns.html?id=${import.meta.env.PUBLIC_GTAG_ID}`
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+      <iframe src=`https://www.googletagmanager.com/ns.html?id=${import.meta.env.PUBLIC_GTAG_ID}`
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
     <Nav />
     <slot />
     <Footer />
