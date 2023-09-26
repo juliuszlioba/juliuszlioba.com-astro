@@ -2,8 +2,11 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
-import hbr_thumbnailImage from "../../../assets/images/portfolio/hbr/hbr_design_thumbnail.png";
-import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_design_content1.jpg";
+import hbr_thumbnailImage from "../../../assets/images/portfolio/hbr/hbr_print_thumbnail.jpg";
+import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_print_content01.jpg";
+import hbr_content_img_02 from "../../../assets/images/portfolio/hbr/hbr_print_content02.jpg";
+import hbr_content_img_03 from "../../../assets/images/portfolio/hbr/hbr_print_content03.jpg";
+import hbr_content_img_04 from "../../../assets/images/portfolio/hbr/hbr_print_content04.jpg";
 ---
 
 <Layout title="Project | Hausbrot.at">
@@ -105,12 +108,30 @@ import hbr_content_img_01 from "../../../assets/images/portfolio/hbr/hbr_design_
           <div class="flex flex-col gap-8">
             <p class="text-lg tracking-wide text-gray-400">
               Paruoštų įmonės dizaino kalbos taisyklių taikymas įvairuose
-              reklamos projektuose.
+              projektuose.
             </p>
 
             <Image
               src={hbr_content_img_01}
-              alt="sketches"
+              alt="hausbrot.at postcards"
+              class="rounded-2xl"
+            />
+
+            <Image
+              src={hbr_content_img_03}
+              alt="hausbrot.ta bršiūros"
+              class="rounded-2xl"
+            />
+
+            <Image
+              src={hbr_content_img_04}
+              alt="hausbrot.ta atributika"
+              class="rounded-2xl"
+            />
+
+            <Image
+              src={hbr_content_img_02}
+              alt="hausbrot.ta roletai"
               class="rounded-2xl"
             />
 

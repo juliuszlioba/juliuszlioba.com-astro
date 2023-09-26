@@ -1,7 +1,7 @@
 {
   "name": "juliuszlioba-com-astro",
   "type": "module",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -18,16 +18,16 @@
     "@fontsource/dm-sans": "^5.0.12",
     "@fontsource/pt-sans": "^5.0.8",
     "@tailwindcss/forms": "^0.5.6",
-    "@types/alpinejs": "^3.13.0",
+    "@types/alpinejs": "^3.13.2",
     "alpinejs": "^3.13.0",
-    "astro": "^3.1.0",
+    "astro": "^3.1.4",
     "js-cookie": "^3.0.5",
     "preact": "^10.17.1",
     "react": "npm:@preact/compat@^17.1.2",
     "react-dom": "npm:@preact/compat@^17.1.2",
-    "react-hook-form": "^7.46.1",
+    "react-hook-form": "^7.46.2",
     "react-intersection-observer": "^9.5.2",
-    "sharp": "^0.32.5",
+    "sharp": "^0.32.6",
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
