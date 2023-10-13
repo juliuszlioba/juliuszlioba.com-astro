@@ -1,7 +1,7 @@
 {
   "name": "juliuszlioba-com-astro",
   "type": "module",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -11,21 +11,21 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@alpinejs/intersect": "^3.13.0",
-    "@astrojs/partytown": "^2.0.0",
-    "@astrojs/preact": "^3.0.0",
-    "@astrojs/tailwind": "^5.0.0",
-    "@fontsource/dm-sans": "^5.0.12",
+    "@alpinejs/intersect": "^3.13.1",
+    "@astrojs/partytown": "^2.0.1",
+    "@astrojs/preact": "^3.0.1",
+    "@astrojs/tailwind": "^5.0.2",
+    "@fontsource/dm-sans": "^5.0.15",
     "@fontsource/pt-sans": "^5.0.8",
     "@tailwindcss/forms": "^0.5.6",
     "@types/alpinejs": "^3.13.2",
-    "alpinejs": "^3.13.0",
-    "astro": "^3.1.4",
+    "alpinejs": "^3.13.1",
+    "astro": "^3.3.0",
     "js-cookie": "^3.0.5",
-    "preact": "^10.17.1",
+    "preact": "^10.18.1",
     "react": "npm:@preact/compat@^17.1.2",
     "react-dom": "npm:@preact/compat@^17.1.2",
-    "react-hook-form": "^7.46.2",
+    "react-hook-form": "^7.47.0",
     "react-intersection-observer": "^9.5.2",
     "sharp": "^0.32.6",
     "tailwindcss": "^3.3.3"
@@ -34,6 +34,6 @@
     "@types/js-cookie": "^3.0.4",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
-    "prettier-plugin-tailwindcss": "^0.5.4"
+    "prettier-plugin-tailwindcss": "^0.5.6"
   }
 }
