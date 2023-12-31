@@ -86,12 +86,11 @@ const gtag_id = import.meta.env.PUBLIC_GTAG_ID;
     <slot />
     <Footer />
 
-    <!-- <Debug /> -->
-
     <script>
       import Alpine from "alpinejs";
+      // @ts-ignore
       import intersect from "@alpinejs/intersect";
-
+      // @ts-ignore
       window.Alpine = Alpine;
       Alpine.plugin(intersect);
       Alpine.start();

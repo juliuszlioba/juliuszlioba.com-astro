@@ -11,8 +11,13 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<div class="absolute top-0 left-0 z-10 w-full py-10" x-data="{ open: false }">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 md:px-8">
+<div
+  class="absolute left-0 top-0 z-10 w-full py-12 md:py-16"
+  x-data="{ open: false }"
+>
+  <div
+    class="mx-auto flex max-w-6xl items-center justify-between px-8 md:px-12"
+  >
     <a
       href={translatePath("/")}
       class="font-pt-sans-bold z-50 order-1 text-2xl"
@@ -21,13 +26,13 @@ const translatePath = useTranslatedPath(lang);
     </a>
 
     <button
-      class="z-50 order-4 ml-3 self-stretch rounded-full bg-gray-700 p-2 lg:hidden hover:bg-orange"
+      class="z-50 order-4 ml-3 self-stretch rounded-full bg-gray-700 p-2 hover:bg-orange lg:hidden"
       x-on:click="open = ! open"
     >
       <div x-show="open">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5"
+          class="h-5 w-5"
           width="16"
           height="16"
           fill="currentColor"
@@ -42,7 +47,7 @@ const translatePath = useTranslatedPath(lang);
       <div x-show="!open">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5"
+          class="h-5 w-5"
           width="16"
           height="16"
           fill="currentColor"
@@ -85,7 +90,7 @@ const translatePath = useTranslatedPath(lang);
         >
           {t("nav.contacts")}
         </a>
-        <div class="flex flex-row gap-4 lg:gap-5 justify-center">
+        <div class="flex flex-row justify-center gap-4 lg:gap-5">
           <div class="flex justify-center">
             <a
               href="https://github.com/juliuszlioba"
@@ -98,7 +103,7 @@ const translatePath = useTranslatedPath(lang);
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="w-6 h-6"
+                class="h-6 w-6"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -119,7 +124,7 @@ const translatePath = useTranslatedPath(lang);
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="w-6 h-6"
+                class="h-6 w-6"
                 viewBox="0 0 16 16"
               >
                 <path
